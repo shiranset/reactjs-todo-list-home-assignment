@@ -1,0 +1,11 @@
+.list-item {
+    background-color: darkslategrey;
+    color: lightblue;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: dimgrey;
+}

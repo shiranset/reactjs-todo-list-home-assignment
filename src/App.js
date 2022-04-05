@@ -1,7 +1,16 @@
+import React from "react";
+
+import Home from "./components/Home/Home";
+import {QueryClient, QueryClientProvider} from "react-query";
+
 export default function App() {
-  return (
+    const queryClient = new QueryClient();
+
+    return (
     <div>
-      <h1>My List</h1>
+        <QueryClientProvider client={queryClient}>
+            <Home/>
+        </QueryClientProvider>
     </div>
   );
 }
